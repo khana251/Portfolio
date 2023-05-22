@@ -3,7 +3,6 @@
 import Image from 'next/image'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai";
-import image from "next/image";
 import deved from "../public/dev-ed-wave.png";
 import design from "../public/design.png";
 import code from "../public/code.png";
