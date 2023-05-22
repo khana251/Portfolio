@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai";
-import deved from "../public/dev-ed-wave.png";
+import avatar from "../public/avatar.png";
 import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
@@ -20,7 +20,10 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   useEffect(() => {
     const nameElement = document.querySelector('.slide-in');
+    const bioElement = document.querySelector('.slide-in-bottom');
+
     nameElement.classList.add('slide-in');
+    bioElement.classList.add('slide-in-bottom');
   }, []);
   return (
     <div className={darkMode? "dark" : ""}>
@@ -39,14 +42,14 @@ export default function Home() {
           <div className='text-center p-10'>
             <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-7xl slide-in'>Amaan Ahmad Khan</h2>
             <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Software Developer</h3>
-            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-300'>I have degree in computer science from McMaster University with technical background in Development as a DevOps Developer prev @ Benevity</p>
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto slide-in-bottom dark:text-gray-300'>I have degree in computer science from McMaster University with technical background in Development as a DevOps Developer prev @ Benevity</p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-16 text-gray-600'>
             <AiFillGithub/>
             <AiFillLinkedin/>
           </div>
           <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden'>
-            <Image src={deved} fill style={{objectFit:"cover"}}/>
+            <Image src={avatar} fill style={{objectFit:"cover"}}/>
           </div>
         </section>
         {/* Second page */} 
