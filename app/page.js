@@ -13,6 +13,7 @@ import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import { useEffect } from 'react';
+import { motion } from "framer-motion"
 
 export default function Home() {
   useEffect(() => {
@@ -27,11 +28,11 @@ export default function Home() {
       <main className='bg-black px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className='min-h-screen'>
           <nav className='py-10 mb-12 flex justify-end'>
-            <ul className='flex items-center'>
-              <li>
+            <motion.ul className='flex items-center'>
+              <motion.li whileHover={{ scale: 1.2 }}>
                 <a className='bg-gradient-to-r from-yellow-100 to-yellow-50 text-black px-4 py-2 rounded-md ml-8' href='https://drive.google.com/file/d/14kasRNYA2zbRp9ZFEYCL4WnS1sFM4uZQ/view?usp=sharing'>Resume</a>
-                </li>
-            </ul>
+                </motion.li>
+            </motion.ul>
           </nav>
           <div className='p-10'>
             <h2 className='text-5xl py-2 text-amber-100 font-medium md:text-9xl slide-in'>Hey,</h2>
@@ -53,20 +54,30 @@ export default function Home() {
             </div>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-16 text-amber-100'>
-            <AiFillGithub/>
-            <AiFillLinkedin/>
-          </div>
+                <motion.ul className='flex justify-center gap-16'>
+                  <motion.li whileHover={{ scale: 1.2 }}>
+                    <a href="https://www.linkedin.com/in/amaan-a-khan/">
+                      <AiFillLinkedin/>
+                    </a>
+                  </motion.li>
+                  <motion.li whileHover={{ scale: 1.2 }}>
+                    <a href="https://github.com/khana251">
+                      <AiFillGithub/>
+                    </a>
+                  </motion.li>
+                </motion.ul>
+              </div>
           
         </section>
         {/* Second page */} 
         <section>
-          <div>
-            <h3 className='text-amber-100 text-3xl py-1'>Services I offer</h3>
-            <p className='text-amber-100 text-md py-2 leading-8 text-grey-800'>
-              I have degree in <span className='text-teal-500'>computer science</span> from McMaster University with technical background in Development as a DevOps Developer prev @ Benevity
+          <div className='px-20'>
+            <h3 className='text-amber-100 text-3xl py-1'>Me Me Me</h3>
+            <p className='text-amber-100 text-md md:text-lg py-2 leading-8 text-grey-800'>
+              I have a strong proficiency in several programming languages, including Python, Java, C++, and SQL. Currently, I am expanding my skills in web development to pursue my passion for design, focusing on JavaScript, React, and Tailwind CSS. I have a keen interest in creating visually appealing websites and enjoy the process of bringing aesthetics and functionality together.
             </p>
-            <p className='text-amber-100 text-md py-2 leading-8 text-grey-800'>
-              I have degree in <span className='text-teal-500'>computer science</span> from McMaster University with technical background in Development as a DevOps Developer prev @ Benevity
+            <p className='text-amber-100 text-md md:text-lg py-2 leading-8 text-grey-800'>
+              Last summer, I worked as a DevOps intern at Benevity, where I had the chance to work on several production issues that arose. This experience was invaluable in helping me gain confidence in my abilities and preparing me for a future full-time role.
             </p>
           </div>
           <div className='xl:flex gap-10 mx-auto'> 
