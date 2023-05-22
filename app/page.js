@@ -3,9 +3,9 @@
 import Image from 'next/image'
 import {AiFillGithub, AiFillLinkedin, AiFillPushpin} from "react-icons/ai";
 import avatar from "../public/avatar.png";
-import design from "../public/design.png";
-import code from "../public/code.png";
-import consulting from "../public/consulting.png";
+import quizApp from "../public/quiz-app.png";
+import pong from "../public/pong.png";
+import minimalCountdownTimer from "../public/minimal-countdown-timer.png";
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
@@ -41,7 +41,7 @@ export default function Home() {
           <div className='flex flex-wrap'>
             <div className='w-full md:w-1/2'>
               <div className='pl-20 py-3'>
-                <h3 className='text-amber-100 text-2xl py-2 md:text-3xl'>Software Developer</h3>
+                <h3 className='text-amber-100 text-2xl py-2 md:text-3xl'>Software Developer <span className='text-sm'>&</span> Designer</h3>
                 <p className='text-md py-5 leading-8 text-amber-100 md:text-xl max-w-2xl slide-in-bottom'>
                   As a Developer based in Canada <span className='inline-block'><AiFillPushpin/></span>  I hold a degree in computer science from McMaster University. I am eager to embark on the next phase of my journey and explore new opportunities.
                 </p>
@@ -82,37 +82,36 @@ export default function Home() {
           </div>
           <div className='xl:flex gap-10 mx-auto'> 
             <div className='bg-amber-100 text-center shadow-lg p-10 rounded-xl my-10'>
-              <Image src={design} wdith={100} height={100} className='mx-auto'/>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful designs</h3>
+              <Image src={quizApp} wdith={100} height={100} className='mx-auto'/>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Quiz Application</h3>
               <p className='py-2'>
-                Creating elegant designs suited for your needs following design theory
+                A quiz application to test your knowledge of basic to advanced github commands
               </p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-              <p className='text-grey-800 py-1'>Photoshop</p>
-              <p className='text-grey-800 py-1'>Illustrator</p>
-              <p className='text-grey-800 py-1'>figma</p>
+              <h4 className='py-4 text-teal-600'>Tools I use</h4>
+              <p className='text-grey-800 py-1'>HTML</p>
+              <p className='text-grey-800 py-1'>CSS</p>
+              <p className='text-grey-800 py-1'>JacaScript</p>
             </div>
             <div className='bg-amber-100 text-center shadow-lg p-10 rounded-xl my-10'>
-              <Image src={code} wdith={100} height={100} className='mx-auto'/>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful designs</h3>
+              <Image src={minimalCountdownTimer} wdith={100} height={100} className='mx-auto'/>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Minimal Countdown Timer</h3>
               <p className='py-2'>
-                Creating elegant designs suited for your needs following design theory
+                A timer to new year precisely to the second!
               </p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-              <p className='text-grey-800 py-1'>Photoshop</p>
-              <p className='text-grey-800 py-1'>Illustrator</p>
-              <p className='text-grey-800 py-1'>figma</p>
+              <h4 className='py-4 text-teal-600'>Tools I use</h4>
+              <p className='text-grey-800 py-1'>HTML</p>
+              <p className='text-grey-800 py-1'>CSS</p>
+              <p className='text-grey-800 py-1'>JavaScript</p>
             </div>
             <div className='bg-amber-100 text-center shadow-lg p-10 rounded-xl my-10'>
-              <Image src={consulting} wdith={100} height={100} className='mx-auto'/>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful designs</h3>
+              <Image src={pong} wdith={100} height={100} className='mx-auto'/>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Pong Game Simulator</h3>
               <p className='py-2'>
-                Creating elegant designs suited for your needs following design theory
+                A graphical game to simulate the classic pong game. Keeping track of scores as you play!
               </p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-              <p className='text-grey-800 py-1'>Photoshop</p>
-              <p className='text-grey-800 py-1'>Illustrator</p>
-              <p className='text-grey-800 py-1'>figma</p>
+              <h4 className='py-4 text-teal-600'>Tools I use</h4>
+              <p className='text-grey-800 py-1'>Python</p>
+              <p className='text-grey-800 py-1'>Turtle</p>
             </div>
           </div>
         </section>
