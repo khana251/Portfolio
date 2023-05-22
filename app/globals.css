@@ -22,3 +22,20 @@ body {
   font-family: "burtons";
   src: url("../public/Burtons.otf");
 }
+
+.slide-in {
+  opacity: 0;
+  transform: translateY(-100%);
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

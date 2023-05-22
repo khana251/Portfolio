@@ -14,16 +14,20 @@ import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import { useState } from 'react';
+import { useEffect } from 'react';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  useEffect(() => {
+    const nameElement = document.querySelector('.slide-in');
+    nameElement.classList.add('slide-in');
+  }, []);
   return (
     <div className={darkMode? "dark" : ""}>
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className='min-h-screen'>
-          <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl font-burtons'>WELCOME TO MY PORTFOLIO</h1>
-            <ul className='flex item-center'>
+          <nav className='py-10 mb-12 flex justify-end'>
+            <ul className='flex items-center'>
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl'/>
                 </li>
@@ -33,9 +37,9 @@ export default function Home() {
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-7xl'>Amaan Ahmad Khan</h2>
-            <h3 className='text-2xl py-2 md:text-3xl'>Software Developer</h3>
-            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>I have degree in computer science from McMaster University with technical background in Development as a DevOps Developer prev @ Benevity</p>
+            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-7xl slide-in'>Amaan Ahmad Khan</h2>
+            <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Software Developer</h3>
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-300'>I have degree in computer science from McMaster University with technical background in Development as a DevOps Developer prev @ Benevity</p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-16 text-gray-600'>
             <AiFillGithub/>
@@ -48,16 +52,16 @@ export default function Home() {
         {/* Second page */} 
         <section>
           <div>
-            <h3 className='text-3xl py-1'>Services I offer</h3>
-            <p className='text-md py-2 leading-8 text-grey-800'>
+            <h3 className='text-3xl py-1 dark:text-gray-300'>Services I offer</h3>
+            <p className='text-md py-2 leading-8 text-grey-800 dark:text-gray-300'>
               I have degree in <span className='text-teal-500'>computer science</span> from McMaster University with technical background in Development as a DevOps Developer prev @ Benevity
             </p>
-            <p className='text-md py-2 leading-8 text-grey-800'>
+            <p className='text-md py-2 leading-8 text-grey-800 dark:text-gray-300'>
               I have degree in <span className='text-teal-500'>computer science</span> from McMaster University with technical background in Development as a DevOps Developer prev @ Benevity
             </p>
           </div>
           <div className='xl:flex gap-10'> 
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-300'>
               <Image src={design} wdith={100} height={100} className='mx-auto'/>
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful designs</h3>
               <p className='py-2'>
@@ -68,7 +72,7 @@ export default function Home() {
               <p className='text-grey-800 py-1'>Illustrator</p>
               <p className='text-grey-800 py-1'>figma</p>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-300'>
               <Image src={code} wdith={100} height={100} className='mx-auto'/>
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful designs</h3>
               <p className='py-2'>
@@ -79,7 +83,7 @@ export default function Home() {
               <p className='text-grey-800 py-1'>Illustrator</p>
               <p className='text-grey-800 py-1'>figma</p>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-300'>
               <Image src={consulting} wdith={100} height={100} className='mx-auto'/>
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful designs</h3>
               <p className='py-2'>
@@ -95,11 +99,11 @@ export default function Home() {
         {/* Third page */} 
         <section>
           <div>
-            <h3 className='text-3xl py-1'>Portfolio</h3>
-            <p className='text-md py-2 leading-8 text-grey-800'>
+            <h3 className='text-3xl py-1 dark:text-gray-300'>Portfolio</h3>
+            <p className='text-md py-2 leading-8 text-grey-800 dark:text-gray-300'>
               I have degree in <span className='text-teal-500'>computer science</span> from McMaster University with technical background in Development as a DevOps Developer prev @ Benevity
             </p>
-            <p className='text-md py-2 leading-8 text-grey-800'>
+            <p className='text-md py-2 leading-8 text-grey-800 dark:text-gray-300'>
               I have degree in <span className='text-teal-500'>computer science</span> from McMaster University with technical background in Development as a DevOps Developer prev @ Benevity
             </p>
           </div>
