@@ -1,15 +1,12 @@
 {
   "name": "my-portfolio",
   "version": "0.1.0",
-  "homepage": "https://khana251.github.io/Portfolio",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "lint": "next lint"
   },
   "dependencies": {
     "eslint": "8.41.0",
