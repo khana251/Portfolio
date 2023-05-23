@@ -71,7 +71,7 @@ export default function Home() {
         </section>
         {/* Second page */} 
         <section>
-          <motion.div initial={{ opacity: 0 }} transition={{ duration: 1 }} whileInView={{ opacity: 1 }} className='px-20'>
+          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className='px-5 l:px-10'>
             <h3 className='text-amber-100 text-3xl py-1'>Me Me Me</h3>
             <p className='text-amber-100 text-md md:text-lg py-2 leading-8 text-grey-800'>
               I have a strong proficiency in several programming languages, including Python, Java, C++, and SQL. Currently, I am expanding my skills in web development to pursue my passion for design, focusing on JavaScript, React, and Tailwind CSS. I have a keen interest in creating visually appealing websites and enjoy the process of bringing aesthetics and functionality together.
@@ -114,7 +114,7 @@ export default function Home() {
               <p className='text-grey-800 py-1'>Python</p>
               <p className='text-grey-800 py-1'>Turtle</p>
               <p className='text-grey-800 py-1'>Graphics</p>
-              <motion.ul className='px-4 py-4 flex flex-wrap justify-center gap-2'>
+              <motion.ul className='px-4 py-4 flex flex-wrap justify-center'>
                 <motion.li whileHover={{ scale: 1.2 }}>
                   <a className='bg-amber-200 px-4 py-2 text-black rounded-md' href='https://github.com/khana251/pong'>Code</a>
                 </motion.li>
@@ -130,7 +130,7 @@ export default function Home() {
               <p className='text-grey-800 py-1'>HTML</p>
               <p className='text-grey-800 py-1'>CSS</p>
               <p className='text-grey-800 py-1'>JavaScript</p>
-              <motion.ul className='px-4 py-4 flex flex-wrap justify-center gap-2'>
+              <motion.ul className='px-4 py-4 flex flex-wrap justify-center gap-20'>
                 <motion.li whileHover={{ scale: 1.2 }}>
                   <a className='bg-amber-200 px-4 py-2 text-black rounded-md' href='https://khana251.github.io/Minimal-Countdown-Timer/'>Demo</a>
                 </motion.li>
