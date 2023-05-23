@@ -6,55 +6,64 @@ import avatar from "../public/avatar.png";
 import quizApp from "../public/quiz-app.png";
 import pong from "../public/pong.png";
 import minimalCountdownTimer from "../public/minimal-countdown-timer.png";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
 import { useEffect } from 'react';
 import { motion } from "framer-motion"
 
 export default function Home() {
-  useEffect(() => {
-    const nameElement = document.querySelector('.slide-in');
-    const bioElement = document.querySelector('.slide-in-bottom');
-
-    nameElement.classList.add('slide-in');
-    bioElement.classList.add('slide-in-bottom');
-  }, []);
   return (
     <div>
-      <main className='bg-black px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
+      <main className='bg-black px-10 md:px-20 lg:px-40 dark:bg-gray-900 py-1'>
         <section className='min-h-screen'>
           <nav className='py-10 mb-12 flex justify-end'>
-            <motion.ul className='flex items-center'>
+            <motion.ul 
+              initial = {{ x: 100, opacity: 0}}
+              animate = {{ x: 0, opacity: 1}}
+              transition = {{ duration: 0.5}}
+              className='flex items-center'>
               <motion.li whileHover={{ scale: 1.2 }}>
                 <a className='bg-gradient-to-r from-yellow-100 to-yellow-50 text-black px-4 py-2 rounded-md ml-8' href='https://drive.google.com/file/d/14kasRNYA2zbRp9ZFEYCL4WnS1sFM4uZQ/view?usp=sharing'>Resume</a>
                 </motion.li>
             </motion.ul>
           </nav>
-          <div className='p-10'>
-            <h2 className='text-5xl py-2 text-amber-100 font-medium md:text-9xl slide-in'>Hey,</h2>
-            <h2 className='text-5xl py-2 text-amber-100 font-medium md:text-9xl slide-in'>I am Amaan</h2>
-          </div>
+          <motion.div 
+            initial={{x: '-100vw', opacity: 0}} 
+            animate={{x: 0, opacity: 1}}
+            transition={{type: 'spring', duration: 0.5, bounce: 0.3}}
+            className='p-10'>
+            <h2 className='text-5xl py-2 text-amber-100 font-medium md:text-9xl'>Hey,</h2>
+            <h2 className='text-5xl py-2 text-amber-100 font-medium md:text-9xl'>I am Amaan</h2>
+          </motion.div>
           <div className='flex flex-wrap'>
-            <div className='w-full md:w-1/2'>
+            <motion.div 
+              initial={{x: '-100vw', opacity: 0}} 
+              animate={{x: 0, opacity: 1}}
+              transition={{duration: 0.8}}
+              className='w-full md:w-1/2'>
               <div className='pl-20 py-3'>
                 <h3 className='text-amber-100 text-2xl py-2 md:text-3xl'>Software Developer <span className='text-sm'>&</span> Designer</h3>
-                <p className='text-md py-5 leading-8 text-amber-100 md:text-xl max-w-2xl slide-in-bottom'>
+                <p className='text-md py-5 leading-8 text-amber-100 md:text-xl max-w-2xl'>
                   As a Developer based in Canada <span className='inline-block'><AiFillPushpin/></span>  I hold a degree in computer science from McMaster University. I am eager to embark on the next phase of my journey and explore new opportunities.
                 </p>
               </div>
-            </div>
-            <div className='w-full md:w-1/2 flex justify-center items-center'>
+            </motion.div>
+            <motion.div 
+              initial={{opacity: 0}}
+              animate={{
+                opacity: 1,
+                duration: 0.8
+              }}
+              className='w-full md:w-1/2 flex justify-center items-center'>
               <div className='relative mt-30 mx-auto bg-gradient-to-b from-amber-100 rounded-full w-80 h-80 overflow-hidden'>
                 <Image src={avatar} alt='My icon' fill sizes="(max-width: 768px) 100vw" priority style={{ objectFit: "cover" }} />
               </div>
-            </div>
+            </motion.div>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-16 text-amber-100'>
-                <motion.ul className='flex justify-center gap-16'>
+                <motion.ul
+                  initial={{opacity: 0}} 
+                  animate={{opacity: 1}}
+                  transition={{duration: 0.8}} 
+                  className='flex justify-center gap-16'>
                   <motion.li whileHover={{ scale: 1.2 }}>
                     <a href="https://www.linkedin.com/in/amaan-a-khan/">
                       <AiFillLinkedin/>
@@ -84,7 +93,7 @@ export default function Home() {
             <h2 className='text-5xl py-2 text-amber-100 font-medium md:text-9xl'>Some of my</h2>
             <h2 className='text-center text-5xl py-2 text-amber-100 font-medium md:text-9xl'>s-·de projects</h2>
           </motion.div>
-          <div className='xl:flex gap-10 mx-auto'> 
+          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className='xl:flex gap-10 mx-auto'> 
             <div className='bg-amber-100 text-center shadow-lg p-10 rounded-xl my-10'>
               <Image src={quizApp} alt='Question Mark' wdith={100} height={100} className='mx-auto'/>
               <h3 className='text-lg font-medium pt-8 pb-2'>Quiz Application</h3>
@@ -139,20 +148,9 @@ export default function Home() {
                 </motion.li>
               </motion.ul>
             </div>
-          </div>
+          </motion.div>
         </section>
         {/* Third page */} 
-        <section>
-          <div>
-            <h3 className='text-3xl py-1 text-amber-100'>Portfolio</h3>
-            <p className='text-md py-2 leading-8 text-grey-800 text-amber-100'>
-              I have degree in <span className='text-teal-500'>computer science</span> from McMaster University with technical background in Development as a DevOps Developer prev @ Benevity
-            </p>
-            <p className='text-md py-2 leading-8 text-grey-800 text-amber-100'>
-              I have degree in <span className='text-teal-500'>computer science</span> from McMaster University with technical background in Development as a DevOps Developer prev @ Benevity
-            </p>
-          </div>
-        </section>
       </main>
     </div>
   );
