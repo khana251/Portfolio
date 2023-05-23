@@ -124,7 +124,7 @@ export default function Home() {
               <Image src={minimalCountdownTimer} alt='Timer logo' wdith={100} height={100} className='mx-auto'/>
               <h3 className='text-lg font-medium pt-8 pb-2'>Minimal Countdown Timer</h3>
               <p className='py-2'>
-                A clean and minimal countdown timer with the precise number of days, hours, minutes and seconds to new year
+                A clean and minimal countdown timer with the precise number of days, hours, minutes and seconds to new year.
               </p>
               <h4 className='py-4 text-green-700'>Tools I used</h4>
               <p className='text-grey-800 py-1'>HTML</p>
