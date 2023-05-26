@@ -173,7 +173,7 @@ export default function Home() {
                 A C program to simulate and compare the different kinds of disc scheduling algorithms.
               </p>
               <h4 className='py-4 text-green-700'>Tools I used</h4>
-              <p className='text-grey-800 py-1'>HTML</p>
+              <p className='text-grey-800 py-1'>C</p>
               <motion.ul className='px-4 py-4 flex flex-wrap justify-center gap-20'>
                 <motion.li whileHover={{ scale: 1.2 }}>
                   <a className='bg-black px-4 py-2 text-amber-100 rounded-md' href='https://github.com/khana251/Disk-Scheduling-in-C'>Code</a>
@@ -199,7 +199,7 @@ export default function Home() {
         {/* Third page */} 
         <section>
           <div className='ml-100 text-center shadow-lg p-5 rounded-t-lg mt-10'>
-              <h2 className='text-amber-100 text-2xl font-medium pt-8 pb-2'>Reach me here: amaankhan1970@gmail.com</h2>
+              <h2 className='text-amber-100 text-2xl font-medium pt-8 pb-2'>Get in touch: amaankhan1970@gmail.com</h2>
           </div>
         </section>
       </main>
