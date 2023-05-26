@@ -5,6 +5,9 @@ import {AiFillGithub, AiFillLinkedin, AiFillPushpin} from "react-icons/ai";
 import avatar from "../public/avatar.png";
 import quizApp from "../public/quiz-app.png";
 import pong from "../public/pong.png";
+import two048 from "../public/2048.png";
+import discScheduling from "../public/Disc-Scheduling.png";
+import folder from "../public/Folder.png";
 import minimalCountdownTimer from "../public/minimal-countdown-timer.png";
 import { useEffect } from 'react';
 import { motion } from "framer-motion"
@@ -93,8 +96,8 @@ export default function Home() {
             <h2 className='text-5xl py-2 text-amber-100 font-medium md:text-9xl'>Some of my</h2>
             <h2 className='text-center text-5xl py-2 text-amber-100 font-medium md:text-9xl'>s-·de projects</h2>
           </motion.div>
-          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className='xl:flex gap-10 mx-auto'> 
-            <div className='bg-amber-100 text-center shadow-lg p-10 rounded-xl my-10'>
+          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className='flex flex-wrap gap-10 mx-auto justify-center m:10'> 
+            <div className='xl:w-1/4 bg-amber-100 text-center shadow-lg p-10 rounded-xl my-10'>
               <Image src={quizApp} alt='Question Mark' wdith={100} height={100} className='mx-auto'/>
               <h3 className='text-lg font-medium pt-8 pb-2'>Quiz Application</h3>
               <p className='py-2'>
@@ -104,7 +107,7 @@ export default function Home() {
               <p className='text-grey-800 py-1'>HTML</p>
               <p className='text-grey-800 py-1'>CSS</p>
               <p className='text-grey-800 py-1'>JavaScript</p>
-              <motion.ul className='px-4 py-4 flex flex-wrap justify-center gap-20'>
+              <motion.ul className='px-4 py-4 flex flex-wrap justify-center gap-5 md:gap-20'>
                 <motion.li whileHover={{ scale: 1.2 }}>
                   <a className='bg-amber-200 px-4 py-2 text-black rounded-md' href='https://khana251.github.io/quiz-app/'>Demo</a>
                 </motion.li>
@@ -113,7 +116,7 @@ export default function Home() {
                 </motion.li>
               </motion.ul>
             </div>
-            <div className='bg-amber-100 text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className='xl:w-1/4 bg-amber-100 text-center shadow-lg p-10 rounded-xl my-10'>
               <Image src={pong} alt='Pong logo' wdith={100} height={100} className='mx-auto'/>
               <h3 className='text-lg font-medium pt-8 pb-2'>Pong Game Simulator</h3>
               <p className='py-2'>
@@ -129,7 +132,7 @@ export default function Home() {
                 </motion.li>
               </motion.ul>
             </div>
-            <div className='bg-amber-100 text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className='xl:w-1/4 bg-amber-100 text-center shadow-lg p-10 rounded-xl my-10'>
               <Image src={minimalCountdownTimer} alt='Timer logo' wdith={100} height={100} className='mx-auto'/>
               <h3 className='text-lg font-medium pt-8 pb-2'>Minimal Countdown Timer</h3>
               <p className='py-2'>
@@ -139,12 +142,55 @@ export default function Home() {
               <p className='text-grey-800 py-1'>HTML</p>
               <p className='text-grey-800 py-1'>CSS</p>
               <p className='text-grey-800 py-1'>JavaScript</p>
-              <motion.ul className='px-4 py-4 flex flex-wrap justify-center gap-20'>
+              <motion.ul className='px-4 py-4 flex flex-wrap justify-center gap-5 md:gap-20'>
                 <motion.li whileHover={{ scale: 1.2 }}>
                   <a className='bg-amber-200 px-4 py-2 text-black rounded-md' href='https://khana251.github.io/Minimal-Countdown-Timer/'>Demo</a>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.2 }}>
                   <a className='bg-amber-200 px-4 py-2 text-black rounded-md' href='https://github.com/khana251/Minimal-Countdown-Timer'>Code</a>
+                </motion.li>
+              </motion.ul>
+            </div>
+            
+            <div className='xl:w-1/4 bg-amber-100 text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image src={folder} alt='folder' wdith={100} height={100} className='mx-auto'/>
+              <h3 className='text-lg font-medium pt-8 pb-2'>AutoFileSorter</h3>
+              <p className='py-2'>
+               A script to sort user files based on the file type to facilitate quick and efficient management!
+              </p>
+              <h4 className='py-4 text-green-700'>Tools I used</h4>
+              <p className='text-grey-800 py-1'>Python</p>
+              <motion.ul className='px-4 py-4 flex flex-wrap justify-center gap-20'>
+                <motion.li whileHover={{ scale: 1.2 }}>
+                  <a className='bg-amber-200 px-4 py-2 text-black rounded-md' href='https://github.com/khana251/AutoFileSorter'>Code</a>
+                </motion.li>
+              </motion.ul>
+            </div>
+            <div className='xl:w-1/4 bg-amber-100 text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image src={discScheduling} alt='disc scheduling logo' wdith={100} height={100} className='mx-auto'/>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Disk Scheduling in C</h3>
+              <p className='py-2'>
+                A C program to simulate and compare the different kinds of disc scheduling algorithms.
+              </p>
+              <h4 className='py-4 text-green-700'>Tools I used</h4>
+              <p className='text-grey-800 py-1'>HTML</p>
+              <motion.ul className='px-4 py-4 flex flex-wrap justify-center gap-20'>
+                <motion.li whileHover={{ scale: 1.2 }}>
+                  <a className='bg-amber-200 px-4 py-2 text-black rounded-md' href='https://github.com/khana251/Disk-Scheduling-in-C'>Code</a>
+                </motion.li>
+              </motion.ul>
+            </div>
+            <div className='xl:w-1/4 bg-amber-100 text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image src={two048} alt='2048 logo' wdith={100} height={100} className='mx-auto'/>
+              <h3 className='text-lg font-medium pt-8 pb-2'>2048 Game</h3>
+              <p className='py-2'>
+                A replica of the 2048 game where the goal of the player is simple, get to 2048.
+              </p>
+              <h4 className='py-4 text-green-700'>Tools I used</h4>
+              <p className='text-grey-800 py-1'>Java</p>
+              <motion.ul className='px-4 py-4 flex flex-wrap justify-center gap-20'>
+                <motion.li whileHover={{ scale: 1.2 }}>
+                  <a className='bg-amber-200 px-4 py-2 text-black rounded-md' href='https://github.com/khana251/2048-game'>Code</a>
                 </motion.li>
               </motion.ul>
             </div>
