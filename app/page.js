@@ -15,8 +15,8 @@ import { motion } from "framer-motion"
 export default function Home() {
   return (
     <div>
-      <main className='bg-black px-10 md:px-20 lg:px-40 dark:bg-gray-900 py-1'>
-        <section className='min-h-screen'>
+      <main className='bg-black pt-1'>
+        <section className='px-10 md:px-20 lg:px-40 min-h-screen'>
           <nav className='py-10 mb-12 flex justify-end'>
             <motion.ul 
               initial = {{ x: 100, opacity: 0}}
@@ -82,7 +82,7 @@ export default function Home() {
           
         </section>
         {/* Second page */} 
-        <section>
+        <section className='px-10 md:px-20 lg:px-40'>
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className='px-5 l:px-10'>
             <h3 className='text-amber-100 text-3xl py-1'>Me Me Me</h3>
             <p className='text-amber-100 text-md md:text-lg py-2 leading-8 text-grey-800'>
@@ -96,7 +96,7 @@ export default function Home() {
             <h2 className='text-5xl py-2 text-amber-100 font-medium md:text-9xl'>Some of my</h2>
             <h2 className='text-center text-5xl py-2 text-amber-100 font-medium md:text-9xl'>s-·de projects</h2>
           </motion.div>
-          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className='flex flex-wrap gap-10 mx-auto justify-center m:10'> 
+          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} className='flex flex-wrap gap-10 mx-auto justify-center m:10'> 
             <div className='xl:w-1/4 bg-amber-100 text-center shadow-lg p-10 rounded-xl my-10'>
               <Image src={quizApp} alt='Question Mark' wdith={100} height={100} className='mx-auto'/>
               <h3 className='text-lg font-medium pt-8 pb-2'>Quiz Application</h3>
@@ -109,10 +109,10 @@ export default function Home() {
               <p className='text-grey-800 py-1'>JavaScript</p>
               <motion.ul className='px-4 py-4 flex flex-wrap justify-center gap-5 md:gap-20'>
                 <motion.li whileHover={{ scale: 1.2 }}>
-                  <a className='bg-amber-200 px-4 py-2 text-black rounded-md' href='https://khana251.github.io/quiz-app/'>Demo</a>
+                  <a className='bg-black px-4 py-2 text-amber-100 rounded-md' href='https://khana251.github.io/quiz-app/'>Demo</a>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.2 }}>
-                  <a className='bg-amber-200 px-4 py-2 text-black rounded-md' href='https://github.com/khana251/quiz-app'>Code</a>
+                  <a className='bg-black px-4 py-2 text-amber-100 rounded-md' href='https://github.com/khana251/quiz-app'>Code</a>
                 </motion.li>
               </motion.ul>
             </div>
@@ -128,7 +128,7 @@ export default function Home() {
               <p className='text-grey-800 py-1'>Graphics</p>
               <motion.ul className='px-4 py-4 flex flex-wrap justify-center'>
                 <motion.li whileHover={{ scale: 1.2 }}>
-                  <a className='bg-amber-200 px-4 py-2 text-black rounded-md' href='https://github.com/khana251/pong'>Code</a>
+                  <a className='bg-black px-4 py-2 text-amber-100 rounded-md' href='https://github.com/khana251/pong'>Code</a>
                 </motion.li>
               </motion.ul>
             </div>
@@ -144,10 +144,10 @@ export default function Home() {
               <p className='text-grey-800 py-1'>JavaScript</p>
               <motion.ul className='px-4 py-4 flex flex-wrap justify-center gap-5 md:gap-20'>
                 <motion.li whileHover={{ scale: 1.2 }}>
-                  <a className='bg-amber-200 px-4 py-2 text-black rounded-md' href='https://khana251.github.io/Minimal-Countdown-Timer/'>Demo</a>
+                  <a className='bg-black px-4 py-2 text-amber-100 rounded-md' href='https://khana251.github.io/Minimal-Countdown-Timer/'>Demo</a>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.2 }}>
-                  <a className='bg-amber-200 px-4 py-2 text-black rounded-md' href='https://github.com/khana251/Minimal-Countdown-Timer'>Code</a>
+                  <a className='bg-black px-4 py-2 text-amber-100 rounded-md' href='https://github.com/khana251/Minimal-Countdown-Timer'>Code</a>
                 </motion.li>
               </motion.ul>
             </div>
@@ -162,7 +162,7 @@ export default function Home() {
               <p className='text-grey-800 py-1'>Python</p>
               <motion.ul className='px-4 py-4 flex flex-wrap justify-center gap-20'>
                 <motion.li whileHover={{ scale: 1.2 }}>
-                  <a className='bg-amber-200 px-4 py-2 text-black rounded-md' href='https://github.com/khana251/AutoFileSorter'>Code</a>
+                  <a className='bg-black px-4 py-2 text-amber-100 rounded-md' href='https://github.com/khana251/AutoFileSorter'>Code</a>
                 </motion.li>
               </motion.ul>
             </div>
@@ -176,7 +176,7 @@ export default function Home() {
               <p className='text-grey-800 py-1'>HTML</p>
               <motion.ul className='px-4 py-4 flex flex-wrap justify-center gap-20'>
                 <motion.li whileHover={{ scale: 1.2 }}>
-                  <a className='bg-amber-200 px-4 py-2 text-black rounded-md' href='https://github.com/khana251/Disk-Scheduling-in-C'>Code</a>
+                  <a className='bg-black px-4 py-2 text-amber-100 rounded-md' href='https://github.com/khana251/Disk-Scheduling-in-C'>Code</a>
                 </motion.li>
               </motion.ul>
             </div>
@@ -190,13 +190,18 @@ export default function Home() {
               <p className='text-grey-800 py-1'>Java</p>
               <motion.ul className='px-4 py-4 flex flex-wrap justify-center gap-20'>
                 <motion.li whileHover={{ scale: 1.2 }}>
-                  <a className='bg-amber-200 px-4 py-2 text-black rounded-md' href='https://github.com/khana251/2048-game'>Code</a>
+                  <a className='bg-black px-4 py-2 text-amber-100 rounded-md' href='https://github.com/khana251/2048-game'>Code</a>
                 </motion.li>
               </motion.ul>
             </div>
           </motion.div>
         </section>
         {/* Third page */} 
+        <section>
+          <div className='ml-100 text-center shadow-lg p-5 rounded-t-lg mt-10'>
+              <h2 className='text-amber-100 text-2xl font-medium pt-8 pb-2'>Reach me here: amaankhan1970@gmail.com</h2>
+          </div>
+        </section>
       </main>
     </div>
   );
