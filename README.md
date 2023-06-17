@@ -1,6 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## The website can be accessed at https://amaan-personal-portfolio.vercel.app/
+## The website can be accessed at https://amaan-website.vercel.app/
+
 
 ## Getting Started Locally
 
