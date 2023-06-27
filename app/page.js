@@ -24,7 +24,7 @@ export default function Home() {
               transition = {{ duration: 0.5}}
               className='flex items-center'>
               <motion.li whileHover={{ scale: 1.2 }}>
-                <a className='bg-gradient-to-r from-yellow-100 to-yellow-50 text-black px-4 py-2 rounded-md ml-8' href='https://drive.google.com/file/d/1QuAtrxOs9tWnJRILuoJIbrBW2CIGvjo0/view?usp=sharing'>Resume</a>
+                <a className='bg-gradient-to-r from-yellow-100 to-yellow-50 text-black px-4 py-2 rounded-md ml-8' href='https://drive.google.com/file/d/1c2RWRBzPCdORGQ6maz6N9FJfydGK5VjM/view?usp=sharing'>Resume</a>
                 </motion.li>
             </motion.ul>
           </nav>
