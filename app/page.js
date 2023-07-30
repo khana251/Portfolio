@@ -199,7 +199,7 @@ export default function Home() {
         {/* Third page */} 
         <section>
           <div className='ml-100 text-center shadow-lg p-5 rounded-t-lg mt-10'>
-              <h2 className='text-amber-100 text-2xl font-medium pt-8 pb-2'>Get in touch: amaankhan1970@gmail.com</h2>
+              <h2 className='text-amber-100 text-2xl font-medium pt-8 pb-2'>Get in touch: amaan.a.khan@outlook.com</h2>
           </div>
         </section>
       </main>
