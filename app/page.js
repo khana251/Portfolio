@@ -24,7 +24,7 @@ export default function Home() {
               transition = {{ duration: 0.5}}
               className='flex items-center'>
               <motion.li whileHover={{ scale: 1.2 }}>
-                <a className='bg-gradient-to-r from-yellow-100 to-yellow-50 text-black px-4 py-2 rounded-md ml-8' href='https://drive.google.com/file/d/1VJMPEgR9pY82JUz4K_PRLqY0jEoYUjaT/view?usp=drive_link'>Resume</a>
+                <a className='bg-gradient-to-r from-yellow-100 to-yellow-50 text-black px-4 py-2 rounded-md ml-8' href='https://drive.google.com/file/d/1pSre_BX72h8D-82fQAZkgraQxCVsjRXc/view?usp=drive_link'>Resume</a>
                 </motion.li>
             </motion.ul>
           </nav>
@@ -199,7 +199,7 @@ export default function Home() {
         {/* Third page */} 
         <section>
           <div className='ml-100 text-center shadow-lg p-5 rounded-t-lg mt-10'>
-              <h2 className='text-amber-100 text-2xl font-medium pt-8 pb-2'>Get in touch: amaan.a.khan@outlook.com</h2>
+              <h2 className='text-amber-100 text-2xl font-medium pt-8 pb-2'>Get in touch: amaankhan1970@gmail.com</h2>
           </div>
         </section>
       </main>
