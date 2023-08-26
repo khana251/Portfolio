@@ -43,7 +43,7 @@ export default function Home() {
               transition={{duration: 0.8}}
               className='w-full md:w-1/2'>
               <div className='pl-20 py-3'>
-                <h3 className='text-amber-100 text-2xl py-2 md:text-3xl'>Software Developer <span className='text-sm'>&</span> Designer</h3>
+                <h3 className='text-amber-100 text-2xl py-2 md:text-3xl'>Developer <span className='text-sm'>&</span> Designer</h3>
                 <p className='text-md py-5 leading-8 text-amber-100 md:text-xl max-w-2xl'>
                   As a Developer based in Canada <span className='inline-block'><AiFillPushpin/></span>  I hold a degree in computer science from McMaster University. I am eager to embark on the next phase of my journey and explore new opportunities.
                 </p>
@@ -89,7 +89,7 @@ export default function Home() {
               I have a strong proficiency in several programming languages, including Python, Java, C++, and SQL. Currently, I am expanding my skills in web development to pursue my passion for design, focusing on JavaScript, React, and Tailwind CSS. I have a keen interest in creating visually appealing websites and enjoy the process of bringing aesthetics and functionality together.
             </p>
             <p className='text-amber-100 text-md md:text-lg py-2 leading-8 text-grey-800'>
-              Last summer, I worked as a DevOps intern at Benevity, where I had the chance to work on several production issues that arose. This experience was invaluable in helping me gain confidence in my abilities and preparing me for a future full-time role.
+              Last summer, I worked as a DevOps intern at Benevity, where I had the chance to work on several production issues that arose. This experience was invaluable in helping me gain confidence in my abilities and preparing me for my fulltime responsibilities!
             </p>
           </motion.div>
           <motion.div initial={{ opacity: 0 }} transition={{ duration: 1 }} whileInView={{ opacity: 1 }} className='p-10'>
