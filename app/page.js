@@ -43,7 +43,7 @@ export default function Home() {
               transition={{duration: 0.8}}
               className='w-full md:w-1/2'>
               <div className='pl-20 py-3'>
-                <h3 className='text-amber-100 text-2xl py-2 md:text-3xl'>Developer <span className='text-sm'>&</span> Designer</h3>
+                <h3 className='text-amber-100 text-2xl py-2 md:text-3xl'>Developer</h3>
                 <p className='text-md py-5 leading-8 text-amber-100 md:text-xl max-w-2xl'>
                   As a Developer based in Canada <span className='inline-block'><AiFillPushpin/></span>  I hold a degree in computer science from McMaster University. I am eager to embark on the next phase of my journey and explore new opportunities.
                 </p>
