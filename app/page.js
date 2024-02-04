@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image'
-import {AiFillGithub, AiFillLinkedin, AiFillPushpin} from "react-icons/ai";
+import {AiFillGithub, AiFillLinkedin} from "react-icons/ai";
 import avatar from "../public/avatar.png";
 import quizApp from "../public/quiz-app.png";
 import pong from "../public/pong.png";
@@ -18,6 +18,7 @@ export default function Home() {
       <main className='bg-black pt-1'>
         <section className='px-10 md:px-20 lg:px-40 min-h-screen'>
           <nav className='py-10 mb-12 flex justify-end'>
+            {/*
             <motion.ul 
               initial = {{ x: 100, opacity: 0}}
               animate = {{ x: 0, opacity: 1}}
@@ -27,6 +28,7 @@ export default function Home() {
                 <a className='bg-gradient-to-r from-yellow-100 to-yellow-50 text-black px-4 py-2 rounded-md ml-8' href='https://drive.google.com/file/d/1o0wmz9y7cBLuEm1LND-uvnrpnnt6p6AF/view?usp=drive_link'>Resume</a>
                 </motion.li>
             </motion.ul>
+            */}
           </nav>
           <motion.div 
             initial={{x: '-100vw', opacity: 0}} 
@@ -44,8 +46,8 @@ export default function Home() {
               className='w-full md:w-1/2'>
               <div className='pl-20 py-3'>
                 <h3 className='text-amber-100 text-2xl py-2 md:text-3xl'>Developer</h3>
-                <p className='text-md py-5 leading-8 text-amber-100 md:text-xl max-w-2xl'>
-                  As a Developer based in Canada <span className='inline-block'><AiFillPushpin/></span>  I hold a degree in computer science from McMaster University. I am eager to embark on the next phase of my journey and explore new opportunities.
+                <p className='text-sm py-5 leading-8 text-amber-100 md:text-xl max-w-2xl'>
+                
                 </p>
               </div>
             </motion.div>
@@ -86,13 +88,13 @@ export default function Home() {
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className='px-5 l:px-10'>
             <h3 className='text-amber-100 text-3xl py-1'>About me</h3>
             <p className='text-amber-100 text-md md:text-lg py-2 leading-8 text-grey-800'>
-              I have a strong proficiency in several programming languages, including Python, Java, C++, and SQL. Currently, I am expanding my skills in web development to pursue my passion for design, focusing on JavaScript, React, and Tailwind CSS. I have a keen interest in creating visually appealing websites and enjoy the process of bringing aesthetics and functionality together.
-            </p>
-            <p className='text-amber-100 text-md md:text-lg py-2 leading-8 text-grey-800'>
             As a DevOps Engineer at Descartes, I contribute to the 3rd Line Team, focusing on investigating critical system level issues and handling application deployment.
             </p>
             <p className='text-amber-100 text-md md:text-lg py-2 leading-8 text-grey-800'>
               Last summer, I worked as a DevOps intern at Benevity, where I had the chance to work on several production issues that arose. This experience was invaluable in helping me gain confidence in my abilities and preparing me for my fulltime responsibilities!
+            </p>
+            <p className='text-amber-100 text-md md:text-lg py-2 leading-8 text-grey-800'>
+              I have a strong proficiency in several programming languages, including Python, Java, C++, and SQL. Currently, I am expanding my skills in web development to pursue my passion for design, focusing on JavaScript, React, and Tailwind CSS. I have a keen interest in creating visually appealing websites and enjoy the process of bringing aesthetics and functionality together.
             </p>
           </motion.div>
           <motion.div initial={{ opacity: 0 }} transition={{ duration: 1 }} whileInView={{ opacity: 1 }} className='p-10'>
@@ -106,7 +108,7 @@ export default function Home() {
               <p className='py-2'>
                 A quiz application to test your knowledge of basic to advanced github commands.
               </p>
-              <h4 className='py-4 text-green-700'>Tools I used</h4>
+              <h4 className='py-4 text-grey-800'>Tools I used</h4>
               <p className='text-grey-800 py-1'>HTML</p>
               <p className='text-grey-800 py-1'>CSS</p>
               <p className='text-grey-800 py-1'>JavaScript</p>
@@ -125,7 +127,7 @@ export default function Home() {
               <p className='py-2'>
                 A graphical game to simulate the classic pong game. Keeping track of scores as you play!
               </p>
-              <h4 className='py-4 text-green-700'>Tools I use</h4>
+              <h4 className='py-4 text-grey-800'>Tools I used</h4>
               <p className='text-grey-800 py-1'>Python</p>
               <p className='text-grey-800 py-1'>Turtle</p>
               <p className='text-grey-800 py-1'>Graphics</p>
@@ -141,7 +143,7 @@ export default function Home() {
               <p className='py-2'>
                 A clean and minimal countdown timer with the precise number of days, hours, minutes and seconds to new year.
               </p>
-              <h4 className='py-4 text-green-700'>Tools I used</h4>
+              <h4 className='py-4 text-grey-800'>Tools I used</h4>
               <p className='text-grey-800 py-1'>HTML</p>
               <p className='text-grey-800 py-1'>CSS</p>
               <p className='text-grey-800 py-1'>JavaScript</p>
@@ -161,7 +163,7 @@ export default function Home() {
               <p className='py-2'>
                A script to sort user files based on the file type to facilitate quick and efficient management!
               </p>
-              <h4 className='py-4 text-green-700'>Tools I used</h4>
+              <h4 className='py-4 text-grey-800'>Tools I used</h4>
               <p className='text-grey-800 py-1'>Python</p>
               <motion.ul className='px-4 py-4 flex flex-wrap justify-center gap-20'>
                 <motion.li whileHover={{ scale: 1.2 }}>
@@ -175,7 +177,7 @@ export default function Home() {
               <p className='py-2'>
                 A C program to simulate and compare the different kinds of disc scheduling algorithms.
               </p>
-              <h4 className='py-4 text-green-700'>Tools I used</h4>
+              <h4 className='py-4 text-grey-800'>Tools I used</h4>
               <p className='text-grey-800 py-1'>C</p>
               <motion.ul className='px-4 py-4 flex flex-wrap justify-center gap-20'>
                 <motion.li whileHover={{ scale: 1.2 }}>
@@ -189,7 +191,7 @@ export default function Home() {
               <p className='py-2'>
                 A replica of the 2048 game where the goal of the player is simple, get to 2048.
               </p>
-              <h4 className='py-4 text-green-700'>Tools I used</h4>
+              <h4 className='py-4 text-grey-800'>Tools I used</h4>
               <p className='text-grey-800 py-1'>Java</p>
               <motion.ul className='px-4 py-4 flex flex-wrap justify-center gap-20'>
                 <motion.li whileHover={{ scale: 1.2 }}>
