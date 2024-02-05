@@ -47,7 +47,7 @@ export default function Home() {
               <div className='pl-20 py-3'>
                 <h3 className='text-amber-100 text-2xl py-2 md:text-3xl'>Developer</h3>
                 <p className='text-sm py-5 leading-8 text-amber-100 md:text-xl max-w-2xl'>
-                
+                  As a DevOps Engineer at Descartes, I contribute to the 3rd Line Team, focusing on investigating escalations regarding critical system/application issues and handling application deployment. 
                 </p>
               </div>
             </motion.div>
@@ -88,18 +88,16 @@ export default function Home() {
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className='px-5 l:px-10'>
             <h3 className='text-amber-100 text-3xl py-1'>About me</h3>
             <p className='text-amber-100 text-md md:text-lg py-2 leading-8 text-grey-800'>
-            As a DevOps Engineer at Descartes, I contribute to the 3rd Line Team, focusing on investigating critical system level issues and handling application deployment.
+               I graduated from McMaster University in 2023 with a honours degree in computer science. 
             </p>
             <p className='text-amber-100 text-md md:text-lg py-2 leading-8 text-grey-800'>
-              Last summer, I worked as a DevOps intern at Benevity, where I had the chance to work on several production issues that arose. This experience was invaluable in helping me gain confidence in my abilities and preparing me for my fulltime responsibilities!
-            </p>
-            <p className='text-amber-100 text-md md:text-lg py-2 leading-8 text-grey-800'>
-              I have a strong proficiency in several programming languages, including Python, Java, C++, and SQL. Currently, I am expanding my skills in web development to pursue my passion for design, focusing on JavaScript, React, and Tailwind CSS. I have a keen interest in creating visually appealing websites and enjoy the process of bringing aesthetics and functionality together.
+              During my final summer at university, I interned as a DevOps Engineer at Benevity, where I had the chance to work on a wide range of issues that arose as part of the Production Support Team.
             </p>
           </motion.div>
           <motion.div initial={{ opacity: 0 }} transition={{ duration: 1 }} whileInView={{ opacity: 1 }} className='p-10'>
-            <h2 className='text-5xl py-2 text-amber-100 font-medium md:text-9xl'>Some of my</h2>
-            <h2 className='text-center text-5xl py-2 text-amber-100 font-medium md:text-9xl'>s-·de projects</h2>
+            <h2 className='text-center text-5xl py-2 text-amber-100 font-medium md:text-9xl'>Some</h2>
+            <h2 className='text-3xl py-2 text-center text-amber-100 font-medium md:text-3xl'>of my</h2>
+            <h2 className='text-center text-5xl py-2 text-amber-100 font-medium md:text-9xl'>projects</h2>
           </motion.div>
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} className='flex flex-wrap gap-10 mx-auto justify-center m:10'> 
             <div className='xl:w-1/4 bg-amber-100 text-center shadow-lg p-10 rounded-xl my-10'>
