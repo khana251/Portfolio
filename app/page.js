@@ -12,12 +12,13 @@ import minimalCountdownTimer from "../public/minimal-countdown-timer.png";
 import { useEffect } from 'react';
 import { motion } from "framer-motion"
 
+
 export default function Home() {
   return (
     <div>
       <main className='bg-black pt-1'>
         <section className='px-10 md:px-20 lg:px-40 min-h-screen'>
-          <nav className='py-10 mb-12 flex justify-end'>
+        <nav className='flex justify-end'>
             {/*
             <motion.ul 
               initial = {{ x: 100, opacity: 0}}
@@ -63,6 +64,11 @@ export default function Home() {
               </div>
             </motion.div>
           </div>
+          
+          <div className='flex flex-wrap'>
+            
+            
+          </div>
           <div className='text-5xl flex justify-center gap-16 py-16 text-amber-100'>
                 <motion.ul
                   initial={{opacity: 0}} 
@@ -88,10 +94,7 @@ export default function Home() {
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className='px-5 l:px-10'>
             <h3 className='text-amber-100 text-3xl py-1'>About me</h3>
             <p className='text-amber-100 text-md md:text-lg py-2 leading-8 text-grey-800'>
-               I graduated from McMaster University in 2023 with a honours degree in computer science. 
-            </p>
-            <p className='text-amber-100 text-md md:text-lg py-2 leading-8 text-grey-800'>
-              During my final summer at university, I interned as a DevOps Engineer at Benevity, where I had the chance to work on a wide range of issues that arose as part of the Production Support Team.
+              As a computer science graduate from McMaster University, I have a passion for coding and problem-solving. I currently work as a DevOps Engineer at Descartes, where I am part of the 3rd Line Team that handles complex system and application issues and deploys solutions to clients. Previously, I gained valuable experience as a DevOps Engineer intern at Benevity, where I worked on various production support tasks and learned from a talented team of engineers.
             </p>
           </motion.div>
           <motion.div initial={{ opacity: 0 }} transition={{ duration: 1 }} whileInView={{ opacity: 1 }} className='p-10'>
