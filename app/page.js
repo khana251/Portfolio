@@ -92,7 +92,7 @@ export default function Home() {
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className='px-5 l:px-10'>
             <h3 className='text-amber-100 text-3xl py-1'>About me</h3>
             <p className='text-amber-100 text-md md:text-lg py-2 leading-8 text-grey-800'>
-              As a computer science graduate from McMaster University, I have a passion for coding and problem-solving. I currently work as a DevOps Engineer at Descartes, where I am part of the 3rd Line Team that handles complex system and application issues and deploys solutions to clients. Previously, I gained valuable experience as a DevOps Engineer intern at Benevity, where I worked on various production support tasks and learned from a talented team of engineers.
+              As a computer science graduate from McMaster University, I have a passion for coding and problem-solving. I currently work as a DevOps Engineer at Descartes, where I am part of the 3rd Line Team that handles complex system and application issues and deploys solutions to clients. Previously, I gained valuable experience as a DevOps Engineer intern at Benevity, where I worked on various production support tasks and worked alongside a talented team of engineers.
             </p>
           </motion.div>
           <motion.div initial={{ opacity: 0 }} transition={{ duration: 1 }} whileInView={{ opacity: 1 }} className='p-10'>
