@@ -46,9 +46,9 @@ export default function Home() {
               transition={{duration: 0.8}}
               className='w-full md:w-1/2'>
               <div className='pl-20 py-3'>
-                <h3 className='text-amber-100 text-2xl py-2 md:text-3xl'>Developer</h3>
+                <h3 className='text-amber-100 text-2xl py-2 md:text-3xl'>Developer & Designer</h3>
                 <p className='text-sm py-5 leading-8 text-amber-100 md:text-xl max-w-2xl'>
-                  As a DevOps Engineer at Descartes, I contribute to the 3rd Line Team, focusing on investigating escalations regarding critical system/application issues and handling application deployment. 
+                  I like creating beautiful websites, always up for a chat about tech. Is AI going to take over?
                 </p>
               </div>
             </motion.div>
@@ -64,29 +64,27 @@ export default function Home() {
               </div>
             </motion.div>
           </div>
+
+          <motion.div
+          initial={{opacity: 0}} 
+          animate={{opacity: 1}}
+          transition={{duration: 0.8}} 
+          className='text-5xl gap-16 py-16 text-amber-100 flex justify-center items-center'>
+            <motion.ul
+              className='flex justify-center gap-16'>
+              <motion.li whileHover={{ scale: 1.2 }}>
+                <a href="https://www.linkedin.com/in/amaan-a-khan/">
+                  <AiFillLinkedin/>
+                </a>
+              </motion.li>
+              <motion.li whileHover={{ scale: 1.2 }}>
+                <a href="https://github.com/khana251">
+                  <AiFillGithub/>
+                </a>
+              </motion.li>
+            </motion.ul>
+          </motion.div>
           
-          <div className='flex flex-wrap'>
-            
-            
-          </div>
-          <div className='text-5xl flex justify-center gap-16 py-16 text-amber-100'>
-                <motion.ul
-                  initial={{opacity: 0}} 
-                  animate={{opacity: 1}}
-                  transition={{duration: 0.8}} 
-                  className='flex justify-center gap-16'>
-                  <motion.li whileHover={{ scale: 1.2 }}>
-                    <a href="https://www.linkedin.com/in/amaan-a-khan/">
-                      <AiFillLinkedin/>
-                    </a>
-                  </motion.li>
-                  <motion.li whileHover={{ scale: 1.2 }}>
-                    <a href="https://github.com/khana251">
-                      <AiFillGithub/>
-                    </a>
-                  </motion.li>
-                </motion.ul>
-              </div>
           
         </section>
         {/* Second page */} 
