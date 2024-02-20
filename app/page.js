@@ -48,7 +48,7 @@ export default function Home() {
               <div className='pl-20 py-3'>
                 <h3 className='text-amber-100 text-2xl py-2 md:text-3xl'>Developer & Designer</h3>
                 <p className='text-sm py-5 leading-8 text-amber-100 md:text-xl max-w-2xl'>
-                  I like creating beautiful websites, always up for a chat about tech. Is AI going to take over?
+                  I like creating beautiful websites and am always up for a chat about all things tech. Is AI going to take over?
                 </p>
               </div>
             </motion.div>
