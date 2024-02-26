@@ -87,14 +87,20 @@ export default function Home() {
           
           
         </section>
+        <div class="flex items-center justify-center py-10">
+          <hr class="w-64 h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700"></hr>
+        </div>
         {/* Second page */} 
         <section className='px-10 md:px-20 lg:px-40'>
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className='px-5 l:px-10'>
-            <h3 className='text-amber-100 text-3xl py-1'>About me</h3>
-            <p className='text-amber-100 text-md md:text-lg py-2 leading-8 text-grey-800'>
+            <h3 className='text-center text-5xl text-amber-100 font-medium md:text-9xl pb-10'>About me</h3>
+            <p className='text-amber-100 text-md md:text-lg leading-8 text-grey-800'>
               As a computer science graduate from McMaster University, I have a passion for coding and problem-solving. I currently work as a DevOps Engineer at Descartes, where I am part of the 3rd Line Team that handles complex system and application issues and deploys solutions to clients. Previously, I gained valuable experience as a DevOps Engineer intern at Benevity, where I worked on various production support tasks and worked alongside a talented team of engineers.
             </p>
           </motion.div>
+          <div class="flex items-center justify-center pt-20">
+          <hr class="w-64 h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700"></hr>
+        </div>
           <motion.div initial={{ opacity: 0 }} transition={{ duration: 1 }} whileInView={{ opacity: 1 }} className='p-10'>
             <h2 className='text-center text-5xl py-2 text-amber-100 font-medium md:text-9xl'>Some</h2>
             <h2 className='text-3xl py-2 text-center text-amber-100 font-medium md:text-3xl'>of my</h2>
