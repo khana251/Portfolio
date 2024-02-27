@@ -16,28 +16,14 @@ import { motion } from "framer-motion"
 export default function Home() {
   return (
     <div>
-      <main className='bg-black pt-1'>
+      <main className='bg-slate-700 pt-1'>
         <section className='px-10 md:px-20 lg:px-40 min-h-screen'>
-        <nav className='flex justify-end'>
-            {/*
-            <motion.ul 
-              initial = {{ x: 100, opacity: 0}}
-              animate = {{ x: 0, opacity: 1}}
-              transition = {{ duration: 0.5}}
-              className='flex items-center'>
-              <motion.li whileHover={{ scale: 1.2 }}>
-                <a className='bg-gradient-to-r from-yellow-100 to-yellow-50 text-black px-4 py-2 rounded-md ml-8' href='https://drive.google.com/file/d/1o0wmz9y7cBLuEm1LND-uvnrpnnt6p6AF/view?usp=drive_link'>Resume</a>
-                </motion.li>
-            </motion.ul>
-            */}
-          </nav>
           <motion.div 
             initial={{x: '-100vw', opacity: 0}} 
             animate={{x: 0, opacity: 1}}
             transition={{type: 'spring', duration: 0.5, bounce: 0.3}}
-            className='p-10'>
-            <h2 className='text-5xl py-2 text-amber-100 font-medium md:text-9xl'>Hey,</h2>
-            <h2 className='text-5xl py-2 text-amber-100 font-medium md:text-9xl'>I am Amaan</h2>
+            className='pt-20 pb-48'>
+            <h2 className='text-center text-5xl py-2 text-amber-100 font-medium md:text-9xl'>Hey, I am Amaan</h2>
           </motion.div>
           <div className='flex flex-wrap'>
             <motion.div 
@@ -84,12 +70,12 @@ export default function Home() {
               </motion.li>
             </motion.ul>
           </motion.div>
-          
-          
         </section>
+
         <div class="flex items-center justify-center py-10">
           <hr class="w-64 h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700"></hr>
         </div>
+
         {/* Second page */} 
         <section className='px-10 md:px-20 lg:px-40'>
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className='px-5 l:px-10'>
@@ -98,9 +84,11 @@ export default function Home() {
               As a computer science graduate from McMaster University, I have a passion for coding and problem-solving. I currently work as a DevOps Engineer at Descartes, where I am part of the 3rd Line Team that handles complex system and application issues and deploys solutions to clients. Previously, I gained valuable experience as a DevOps Engineer intern at Benevity, where I worked on various production support tasks and worked alongside a talented team of engineers.
             </p>
           </motion.div>
-          <div class="flex items-center justify-center pt-20">
+
+        <div class="flex items-center justify-center pt-20">
           <hr class="w-64 h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700"></hr>
         </div>
+
           <motion.div initial={{ opacity: 0 }} transition={{ duration: 1 }} whileInView={{ opacity: 1 }} className='p-10'>
             <h2 className='text-center text-5xl py-2 text-amber-100 font-medium md:text-9xl'>Some</h2>
             <h2 className='text-3xl py-2 text-center text-amber-100 font-medium md:text-3xl'>of my</h2>
