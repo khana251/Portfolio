@@ -22,7 +22,7 @@ export default function Home() {
             initial={{x: '-100vw', opacity: 0}} 
             animate={{x: 0, opacity: 1}}
             transition={{type: 'spring', duration: 0.5, bounce: 0.3}}
-            className='pt-20 pb-48'>
+            className='py-12'>
             <h2 className='text-center text-5xl py-2 text-amber-100 font-medium md:text-9xl'>Hey, I am Amaan</h2>
           </motion.div>
           <div className='flex flex-wrap'>
@@ -105,7 +105,7 @@ export default function Home() {
               <p className='text-grey-800 py-1'>HTML</p>
               <p className='text-grey-800 py-1'>CSS</p>
               <p className='text-grey-800 py-1'>JavaScript</p>
-              <motion.ul className='px-4 py-4 flex flex-wrap justify-center gap-5 md:gap-20'>
+              <motion.ul className='px-4 py-4 flex flex-wrap justify-center gap-5 md:gap-18 align-bottom'>
                 <motion.li whileHover={{ scale: 1.2 }}>
                   <a className='bg-black px-4 py-2 text-amber-100 rounded-md' href='https://khana251.github.io/quiz-app/'>Demo</a>
                 </motion.li>
@@ -140,7 +140,7 @@ export default function Home() {
               <p className='text-grey-800 py-1'>HTML</p>
               <p className='text-grey-800 py-1'>CSS</p>
               <p className='text-grey-800 py-1'>JavaScript</p>
-              <motion.ul className='px-4 py-4 flex flex-wrap justify-center gap-5 md:gap-20'>
+              <motion.ul className='px-4 py-4 flex flex-wrap justify-center gap-5 md:gap-18'>
                 <motion.li whileHover={{ scale: 1.2 }}>
                   <a className='bg-black px-4 py-2 text-amber-100 rounded-md' href='https://khana251.github.io/Minimal-Countdown-Timer/'>Demo</a>
                 </motion.li>
