@@ -31,8 +31,7 @@ export default function Home() {
               animate={{x: 0, opacity: 1}}
               transition={{duration: 0.8}}
               className='w-full md:w-1/2'>
-              <div className='pl-20 py-3'>
-                <h3 className='text-amber-100 text-2xl py-2 md:text-3xl'>Solution Oriented Tech Enthusiast</h3>
+              <div className='pl-20 pt-20 pb-3'>
                 <p className='text-sm py-5 leading-8 text-amber-100 md:text-xl max-w-2xl'>
                   I am a tech enthusiast with a bias for action and finding bottlenecks in systems. I am always looking for new ways to improve my skills and the systems I work with.
                 </p>
