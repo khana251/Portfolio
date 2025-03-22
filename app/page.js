@@ -33,7 +33,7 @@ export default function Home() {
               className='w-full md:w-1/2'>
               <div className='pl-20 py-3'>
                 <p className='text-sm py-5 leading-8 text-gray-300 md:text-xl max-w-2xl'>
-                  Tech enthusiast with a bias for action and finding bottlenecks in systems. I am always looking for new ways to improve my skills and the systems I work with.
+                  BIG TEST Tech enthusiast with a bias for action and finding bottlenecks in systems. I am always looking for new ways to improve my skills and the systems I work with.
                 </p>
               </div>
             </motion.div>
