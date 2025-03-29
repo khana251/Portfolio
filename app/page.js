@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai";
+import { IoIosPin } from "react-icons/io";
 import avatar from "../public/avatar.png";
 import quizApp from "../public/quiz-app.png";
 import pong from "../public/pong.png";
@@ -26,7 +27,6 @@ export default function Home() {
             <h2 className="text-center text-5xl py-2 font-medium md:text-9xl bg-clip-text text-transparent bg-gradient-to-r from-[#796afca6] via-[#a69df8a6] to-[#eeecffa6]">
               Hey, I am Amaan
             </h2>
-
           </motion.div>
           <div className='flex flex-wrap'>
             <motion.div 
