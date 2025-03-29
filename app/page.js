@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai";
-import { IoIosPin } from "react-icons/io";
 import avatar from "../public/avatar.png";
 import quizApp from "../public/quiz-app.png";
 import pong from "../public/pong.png";
@@ -34,10 +33,11 @@ export default function Home() {
               animate={{x: 0, opacity: 1}}
               transition={{duration: 0.8}}
               className='w-full md:w-1/2'>
-              <div className='pl-20 py-20'>
-                <p className='text-sm py-5 leading-8 text-gray-300 md:text-xl max-w-2xl'>
-                  Tech enthusiast with a bias for action and finding bottlenecks in systems. I am always looking for new ways to improve my skills and the systems I work with.
+              <div className='pl-20 py-10'>
+                <p className='pl-5 text-sm py-12 leading-8 text-gray-300 md:text-lg max-w-2xl'>
+                  I am a creative developer with an eye for creating beautiful websites. My focus is on building human-centered software with usability in mind. Based in <span className="text-[#796afca6]">Ontario, Canada</span>!
                 </p>
+                <p className=''></p>
               </div>
             </motion.div>
             <motion.div 
@@ -81,7 +81,7 @@ export default function Home() {
         {/* Second page */} 
         <section className='px-10 md:px-20 lg:px-40'>
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className='px-5 l:px-10'>
-            <h3 className='text-center text-5xl text-[#796afca6] font-medium md:text-9xl pb-10'>About me</h3>
+            <h3 className='text-center text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#796afca6] via-[#a69df8a6] to-[#eeecffa6] font-medium md:text-9xl pb-10'>About Me</h3>
             <p className='text-gray-300 text-md md:text-lg leading-8'>
               As a computer science graduate from McMaster University, I thrive on solving complex technical challenges and optimizing system performance. In my role as a DevOps Engineer at Descartes, I focus on investigating and resolving critical issues while ensuring exceptional customer satisfaction. My experience includes implementing innovative solutions that enhance system reliability and efficiency. Previously at Benevity, I developed a strong foundation in production support and infrastructure optimization, working collaboratively to deliver robust solutions that exceed customer expectations.
             </p>
@@ -93,7 +93,7 @@ export default function Home() {
 
         {/* Work Experience Timeline */}
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className='px-5 l:px-10'>
-          <h3 className='text-center text-5xl text-[#796afca6] font-medium md:text-9xl pb-10'>Work Experience</h3>
+          <h3 className='text-center text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#796afca6] via-[#a69df8a6] to-[#eeecffa6] font-medium md:text-9xl pb-10'>Work Experience</h3>
           
           <div className="relative container mx-auto px-6 flex flex-col space-y-8">
             {/* Vertical line */}
@@ -110,9 +110,7 @@ export default function Home() {
                   <h3 className="text-xl font-bold mb-2 text-[#796afca6]">DevOps Engineer</h3>
                   <h4 className="text-lg font-semibold mb-1 text-gray-300">Descartes Systems Group</h4>
                   <p className="text-sm text-gray-400 mb-2">August 2023 - Present</p>
-                  <p className="text-sm text-gray-300">
-                    Investigate, diagnose and resolve complex environment issues. Deploy solutions to clients and manage system infrastructure.
-                  </p>
+                  <p className="text-sm text-gray-400">Waterloo, ON</p>
                 </div>
               </div>
             </motion.div>
@@ -128,9 +126,7 @@ export default function Home() {
                   <h3 className="text-xl font-bold mb-2 text-[#796afca6]">DevOps Engineer Intern</h3>
                   <h4 className="text-lg font-semibold mb-1 text-gray-300">Benevity Inc.</h4>
                   <p className="text-sm text-gray-400 mb-2">May 2022 - August 2022</p>
-                  <p className="text-sm text-gray-300">
-                    Handled production support tasks and collaborated with engineering team on infrastructure improvements.
-                  </p>
+                  <p className="text-sm text-gray-400">Toronto, ON</p>
                 </div>
               </div>
             </motion.div>
@@ -142,9 +138,9 @@ export default function Home() {
         </div>
 
           <motion.div initial={{ opacity: 0 }} transition={{ duration: 1 }} whileInView={{ opacity: 1 }} className='p-10'>
-            <h2 className='text-center text-5xl py-2 text-[#796afca6] font-medium md:text-9xl'>Some</h2>
-            <h2 className='text-3xl py-2 text-center text-[#796afca6] font-medium md:text-3xl'>of my</h2>
-            <h2 className='text-center text-5xl py-2 text-[#796afca6] font-medium md:text-9xl'>projects</h2>
+            <h2 className='text-center text-5xl py-2 bg-clip-text text-transparent bg-gradient-to-r from-[#796afca6] via-[#a69df8a6] to-[#eeecffa6] font-medium md:text-9xl'>Some</h2>
+            <h2 className='text-3xl py-2 text-center bg-clip-text text-transparent bg-gradient-to-r from-[#796afca6] via-[#a69df8a6] to-[#eeecffa6] font-medium md:text-3xl'>of my</h2>
+            <h2 className='text-center text-5xl py-2 bg-clip-text text-transparent bg-gradient-to-r from-[#796afca6] via-[#a69df8a6] to-[#eeecffa6] font-medium md:text-9xl'>Projects</h2>
           </motion.div>
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} className='flex flex-wrap gap-10 mx-auto justify-center m:10'> 
             <div className='xl:w-1/4 bg-[#112240] text-center shadow-lg p-10 rounded-xl my-10 border border-[#796afca6]/20'>
