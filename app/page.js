@@ -35,7 +35,7 @@ export default function Home() {
               className='w-full md:w-1/2'>
               <div className='pl-20 py-10'>
                 <p className='pl-5 text-sm py-12 leading-8 text-gray-300 md:text-lg max-w-2xl'>
-                  I am a creative developer with an eye for creating beautiful websites. My focus is on building human-centered software with usability in mind. Based in <span className="text-[#796afca6]">Ontario, Canada</span>!
+                  I am a creative developer with an eye for creating beautiful websites. My focus is on building human-centered software with usability in mind. I'm based in <span className="text-[#796afca6]">Ontario, Canada</span>!
                 </p>
                 <p className=''></p>
               </div>
